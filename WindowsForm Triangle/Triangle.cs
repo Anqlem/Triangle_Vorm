@@ -74,7 +74,7 @@ namespace WindowsForm_Triangle
             { c = value; }
         }
 
-        public bool ExistTriange
+        public bool ExistTriangle
         {
             get
             {
