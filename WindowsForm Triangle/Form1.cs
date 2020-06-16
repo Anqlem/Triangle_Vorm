@@ -21,5 +21,10 @@ namespace WindowsForm_Triangle
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

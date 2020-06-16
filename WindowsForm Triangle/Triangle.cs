@@ -11,12 +11,14 @@ namespace WindowsForm_Triangle
         public double a;
         public double b;
         public double c;
+        public double l;
 
-        public Triangle(double A, double B, double C)
+        public Triangle(double A, double B, double C, double L)
         {
             a = A;
             b = B;
             c = C;
+            l = L;
         }
 
         public string outputA()
@@ -34,6 +36,11 @@ namespace WindowsForm_Triangle
             return Convert.ToString(c);
         }
 
+        public string outputL()
+        {
+            return Convert.ToString(l);
+        } 
+
         public double Perimeter()
         {
             double p = 0;
@@ -49,6 +56,7 @@ namespace WindowsForm_Triangle
             s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
             return s;
         }
+
 
         public double GetSetA
         {
@@ -72,6 +80,14 @@ namespace WindowsForm_Triangle
             { return c; }
             set
             { c = value; }
+        }
+
+        public double GetSetL
+        {
+            get
+            { return l; }
+            set
+            { l = value; }
         }
 
         public bool ExistTriangle
