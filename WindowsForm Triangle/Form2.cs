@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace WindowsForm_Triangle
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Run_button_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             double a, b, c, r;
             a = Convert.ToDouble(txtA.Text);
@@ -51,17 +46,9 @@ namespace WindowsForm_Triangle
             else { listView1.Items[7].SubItems.Add("Разносторонний"); }
         }
 
-        private void Clicked(object sender, MouseEventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
         {
-            TextBox box = sender as TextBox;
-            box.Text = String.Empty;
-        }
 
-
-        private void Next_Form(object sender, EventArgs e)
-        {
-            Form2 f2 = new Form2();
-            f2.Show();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

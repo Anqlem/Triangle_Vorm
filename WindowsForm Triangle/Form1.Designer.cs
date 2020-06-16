@@ -37,6 +37,8 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtC = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtR = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +55,7 @@
             this.Run_button.TabIndex = 0;
             this.Run_button.Text = "Запуск";
             this.Run_button.UseVisualStyleBackColor = false;
-            this.Run_button.Click += new System.EventHandler(this.button1_Click);
+            this.Run_button.Click += new System.EventHandler(this.Run_button_Click);
             // 
             // listView1
             // 
@@ -61,12 +63,13 @@
             this.Поле,
             this.columnHeader2});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(21, 12);
+            this.listView1.Location = new System.Drawing.Point(12, 12);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(371, 180);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // Поле
             // 
@@ -82,6 +85,8 @@
             this.txtA.Name = "txtA";
             this.txtA.Size = new System.Drawing.Size(100, 20);
             this.txtA.TabIndex = 2;
+            this.txtA.Text = "Сторона A";
+            this.txtA.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Clicked);
             // 
             // txtB
             // 
@@ -89,6 +94,8 @@
             this.txtB.Name = "txtB";
             this.txtB.Size = new System.Drawing.Size(100, 20);
             this.txtB.TabIndex = 3;
+            this.txtB.Text = "Сторона B";
+            this.txtB.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Clicked);
             // 
             // txtC
             // 
@@ -96,6 +103,8 @@
             this.txtC.Name = "txtC";
             this.txtC.Size = new System.Drawing.Size(100, 20);
             this.txtC.TabIndex = 4;
+            this.txtC.Text = "Сторона С";
+            this.txtC.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Clicked);
             // 
             // pictureBox1
             // 
@@ -107,11 +116,32 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // txtR
+            // 
+            this.txtR.Location = new System.Drawing.Point(40, 308);
+            this.txtR.Name = "txtR";
+            this.txtR.Size = new System.Drawing.Size(100, 20);
+            this.txtR.TabIndex = 6;
+            this.txtR.Text = "Радиус";
+            this.txtR.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Clicked);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(711, 308);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(61, 41);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "---->";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Next_Form);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 361);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtR);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtC);
             this.Controls.Add(this.txtB);
@@ -138,6 +168,8 @@
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtR;
+        private System.Windows.Forms.Button button1;
     }
 }
 
