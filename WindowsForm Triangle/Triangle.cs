@@ -47,6 +47,7 @@ namespace WindowsForm_Triangle
             double p = 0;
             p = (a + b + c) / 2;
             s = Math.Sqrt((p * (p - a) * (p - b) * (p - c)));
+            s = Math.Round(s, 2);
             return s;
         }
 
@@ -56,6 +57,7 @@ namespace WindowsForm_Triangle
             double r = 0;
             p = (a + b + c) / 2;
             r = Math.Sqrt(((p - a) * (p - b) * (p - c)) / p);
+            r = Math.Round(r, 2);
             return r;
         }
 
@@ -65,6 +67,7 @@ namespace WindowsForm_Triangle
             double l = 0; 
             p = (a + b + c) / 2;
             l = 2 * Math.Sqrt (a*b*p * (p - c)) / (a + b);
+            l = Math.Round(l, 2);
             return l;
         }
 

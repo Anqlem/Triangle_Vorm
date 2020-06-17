@@ -73,10 +73,12 @@
             // Поле
             // 
             this.Поле.Text = "Поле";
+            this.Поле.Width = 130;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Значение";
+            this.columnHeader2.Width = 130;
             // 
             // txtA
             // 
