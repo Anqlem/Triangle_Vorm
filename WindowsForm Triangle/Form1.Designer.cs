@@ -37,7 +37,6 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.txtC = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtR = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -116,15 +115,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // txtR
-            // 
-            this.txtR.Location = new System.Drawing.Point(40, 308);
-            this.txtR.Name = "txtR";
-            this.txtR.Size = new System.Drawing.Size(100, 20);
-            this.txtR.TabIndex = 6;
-            this.txtR.Text = "Радиус";
-            this.txtR.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Clicked);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(711, 308);
@@ -141,7 +131,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 361);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtR);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtC);
             this.Controls.Add(this.txtB);
@@ -152,6 +141,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Работа с треугольником";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -168,7 +158,6 @@
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.TextBox txtC;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtR;
         private System.Windows.Forms.Button button1;
     }
 }
