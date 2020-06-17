@@ -36,7 +36,7 @@ namespace WindowsForm_Triangle
             listView1.Items.Add("Периметр");
             listView1.Items.Add("Площадь");
             listView1.Items.Add("Существует?");
-            listView1.Items.Add("Спецификатор");
+            listView1.Items.Add("Тип треугольника");
             listView1.Items[0].SubItems.Add(triangle.outputA());
             listView1.Items[1].SubItems.Add(triangle.outputB());
             listView1.Items[2].SubItems.Add(triangle.outputC());
