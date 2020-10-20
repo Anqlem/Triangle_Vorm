@@ -73,9 +73,79 @@ namespace WindowsForm_Triangle.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap equilateral_triangle_shape_equiangular_polygon_free_creative_triangle_buckle {
+            get {
+                object obj = ResourceManager.GetObject("equilateral-triangle-shape-equiangular-polygon-free-creative-triangle-buckle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif_com_resize {
+            get {
+                object obj = ResourceManager.GetObject("ezgif.com-resize", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif_com_webp_to_png {
+            get {
+                object obj = ResourceManager.GetObject("ezgif.com-webp-to-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif1 {
+            get {
+                object obj = ResourceManager.GetObject("ezgif1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif2 {
+            get {
+                object obj = ResourceManager.GetObject("ezgif2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ezgif3 {
+            get {
+                object obj = ResourceManager.GetObject("ezgif3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap triangle_PNG30 {
             get {
                 object obj = ResourceManager.GetObject("triangle_PNG30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap triangle_yellow_pyramid_pattern_triangle_png_photo {
+            get {
+                object obj = ResourceManager.GetObject("triangle-yellow-pyramid-pattern-triangle-png-photo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

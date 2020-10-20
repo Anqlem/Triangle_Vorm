@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsForm_Triangle
 {
-    public partial class Form2 : Form
+    public partial class Form3 : Form
     {
-        public Form2()
+        public Form3()
         {
             InitializeComponent();
         }
@@ -47,15 +47,9 @@ namespace WindowsForm_Triangle
             else { listView1.Items[8].SubItems.Add("Разносторонний"); }
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void Next_Form(object sender, EventArgs e)
-        {
-            Form3 f3 = new Form3();
-            f3.Show();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
