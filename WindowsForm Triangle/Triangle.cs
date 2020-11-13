@@ -95,7 +95,16 @@ namespace WindowsForm_Triangle
             { c = value; }
         }
 
-
+        public double CSide()
+        {
+            double pyth = 0;
+            double C = 0;
+            double c = 0;
+            pyth = (a * a) + (b * b);
+            C = Math.Sqrt(pyth);
+            c = Math.Round(C);
+            return c;
+        }
 
 
         public bool ExistTriangle
